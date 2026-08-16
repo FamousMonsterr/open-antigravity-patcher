@@ -126,7 +126,7 @@ def find_portable_candidates(search_type="ide"):
                 dirnames[:] = []  # Не спускаемся глубже
 
             # Проверяем, подходит ли папка под критерий эвристики
-            is_match = "antigravity" in dirpath.lower() or dirpath == root or root == cwd
+            is_match = "antigravity" in dirpath.lower() or dirpath == root
 
             if is_match:
                 if search_type == "ide":
